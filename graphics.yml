@@ -1,0 +1,17 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - pacman: name=ttf-dejavu        state=present
+    - pacman: name=xorg-server       state=present
+    - pacman: name=xorg-server-utils state=present
+    - pacman: name=xorg-apps         state=present
+    - pacman: name=xmonad            state=present
+    - pacman: name=compton           state=present
+    - pacman: name=thunderbird       state=present
+    - pacman: name=rxvt-unicode      state=present
+    - pacman: name=xterm             state=present
+    - pacman: name=dzen2             state=present
+    - pacman: name=conky             state=present
+    - pacman: name=feh               state=present
+    - pacman: name=xscreensaver      state=present
+    - pacman: name=autocutsel        state=present

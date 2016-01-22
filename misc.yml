@@ -1,0 +1,7 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - pacman: name=emacs        state=present
+    - pacman: name=vim state=present
+    - pacman: name=neovim state=present
+    - git: repo=https://github.com/anapollonsky/spacemacs.git dest=/home/andrewapollonsky/.emacs.d accept_hostkey=yes become_user=andrewapollonsky
